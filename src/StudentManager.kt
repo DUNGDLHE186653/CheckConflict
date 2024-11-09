@@ -6,7 +6,7 @@ class StudentManager {
 
     fun viewAllStudents() {
         if (students.isEmpty()) {
-            println("No students found.")
+            println("Student list is currently empty.") //change
         } else {
             println("List of students:")
             students.forEach { println(it) }
