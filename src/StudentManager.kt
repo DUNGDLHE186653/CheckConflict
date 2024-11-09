@@ -32,7 +32,7 @@ class StudentManager {
         val student = students.find { it.id == id }
         if (student != null) {
             val scanner = Scanner(System.`in`)
-            println("Updating student with ID $id") // add log
+
             println("Enter new name:")
             val name = scanner.nextLine()
             if (name.isEmpty()) {
@@ -62,6 +62,7 @@ class StudentManager {
             println("Student with ID $id not found.")
         }
     }
+
 
     fun deleteStudent(id: Int) {
         val removed = students.removeIf { it.id == id }
